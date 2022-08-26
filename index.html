@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-dark">
+    <div class="jumbotron">
+        <h1 class="display-4">UIL Results Filter</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="year">Year</label>
+                    <select class="form-control" id="year">
+                        <option value="">All</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                    <label for="region">Region</label>
+                    <select class="form-control" id="region">
+                        <option value="">All</option>
+                        <option value="Region: 1">Region: 1</option>
+                        <option value="Region: 2">Region: 2</option>
+                        <option value="Region: 3">Region: 3</option>
+                        <option value="Region: 4">Region: 4</option>
+                        <option value="Region: 5">Region: 5</option>
+                        <option value="Region: 6">Region: 6</option>
+                        <option value="Region: 7">Region: 7</option>
+                        <option value="Region: 8">Region: 8</option>
+                        <option value="Region: 9">Region: 9</option>
+                        <option value="Region: 10">Region: 10</option>
+                        <option value="Region: 11">Region: 11</option>
+                        <option value="Region: 12">Region: 12</option>
+                        <option value="Region: 13">Region: 13</option>
+                        <option value="Region: 14">Region: 14</option>
+                        <option value="Region: 15">Region: 15</option>
+                        <option value="Region: 16">Region: 16</option>
+                        <option value="Region: 17">Region: 17</option>
+                        <option value="Region: 18">Region: 18</option>
+                        <option value="Region: 19">Region: 19</option>
+                        <option value="Region: 20">Region: 20</option>
+                        <option value="Region: 21">Region: 21</option>
+                        <option value="Region: 22">Region: 22</option>
+                        <option value="Region: 23">Region: 23</option>
+                        <option value="Region: 24">Region: 24</option>
+                        <option value="Region: 25">Region: 25</option>
+                        <option value="Region: 26">Region: 26</option>
+                        <option value="Region: 27">Region: 27</option>
+                        <option value="Region: 28">Region: 28</option>
+                        <option value="Region: 29">Region: 29</option>
+                        <option value="Region: 30">Region: 30</option>
+                        <option value="Region: 31">Region: 31</option>
+                        <option value="Region: 32">Region: 32</option>
+                        <option value="Region: 33">Region: 33</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>School</th>
+                                <th>City</th>
+                                <th>Directors</th>
+                                <th>Conference</th>
+                                <th>Classification</th>
+                                <th>Year</th>
+                                <th>Stage Judge 1</th>
+                                <th>Stage Judge 2</th>
+                                <th>Stage Judge 3</th>
+                                <th>Stage Final</th>
+                                <th>SR Judge 1</th>
+                                <th>SR Judge 2</th>
+                                <th>SR Judge 3</th>
+                                <th>SR Final</th>
+                                <th>Award</th>
+                                <th>Selection 1</th>
+                                <th>Selection 2</th>
+                                <th>Selection 3</th>
+                                <th>Date</th>
+                                <th>Region</th>
+                                <th>cj1</th>
+                                <th>cj2</th>
+                                <th>cj3</th>
+                                <th>srj1</th>
+                                <th>srj2</th>
+                                <th>srj3</th>
+                                <th>Stage Average</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/plot.js"></script>
+
+</body>
+
+</html>
