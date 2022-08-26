@@ -40,6 +40,14 @@ DROP TABLE IF EXISTS unique_judges;
 DROP TABLE IF EXISTS unique_judges_alpha;
 DROP TABLE IF EXISTS test_judges;
 DROP TABLE IF EXISTS all_judges;
+DROP TABLE IF EXISTS cj1_each;
+DROP TABLE IF EXISTS cj2_each;
+DROP TABLE IF EXISTS cj3_each;
+DROP TABLE IF EXISTS srj1_each;
+DROP TABLE IF EXISTS srj2_each;
+DROP TABLE IF EXISTS srj3_each;
+DROP TABLE IF EXISTS judges_each;
+DROP TABLE IF EXISTS top_judges;
 
 SELECT cj1 into cj1_each from uil_results;
 SELECT cj2 into cj2_each from uil_results;
@@ -56,10 +64,9 @@ SELECT * into judges_each from (
     select * from srj3_each 
 ) b;
 
-SELECT cj1, count(*) from judges_each group by cj1 order by count desc;
-
-
-
+SELECT cj1, count(*) into judge_counts from judges_each group by cj1 order by count desc;
+select * into top_judges from judge_counts where (count > 400) AND length(cj1) > 3;
+select * from top_judges;
 
 SELECT DISTINCT cj1 into cj1_unique FROM uil_results ORDER BY cj1;
 SELECT DISTINCT cj2 into cj2_unique FROM uil_results ORDER BY cj2;
@@ -95,6 +102,8 @@ select * from unique_judges_alpha where unique_judges like '%, %';
 select * into test_judges from unique_judges_alpha;
 
 select * from test_judges;
+
+SELECT cj1 from judges_each;
 
 
 
