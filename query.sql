@@ -48,6 +48,7 @@ DROP TABLE IF EXISTS srj2_each;
 DROP TABLE IF EXISTS srj3_each;
 DROP TABLE IF EXISTS judges_each;
 DROP TABLE IF EXISTS top_judges;
+DROP TABLE IF EXISTS judge_counts;
 
 SELECT cj1 into cj1_each from uil_results;
 SELECT cj2 into cj2_each from uil_results;
@@ -64,8 +65,10 @@ SELECT * into judges_each from (
     select * from srj3_each 
 ) b;
 
+SELECT * from judges_each;
+
 SELECT cj1, count(*) into judge_counts from judges_each group by cj1 order by count desc;
-select * into top_judges from judge_counts where (count > 400) AND length(cj1) > 3;
+select * into top_judges from judge_counts where (count > 100) AND length(cj1) > 3;
 select * from top_judges;
 
 SELECT DISTINCT cj1 into cj1_unique FROM uil_results ORDER BY cj1;
@@ -103,7 +106,6 @@ select * into test_judges from unique_judges_alpha;
 
 select * from test_judges;
 
-SELECT cj1 from judges_each;
 
 
 
