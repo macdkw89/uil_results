@@ -9,8 +9,8 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="web/css/style.css">
+    <title>UIL Results</title>
 </head>
 
 <body class="bg-dark">
@@ -80,50 +80,61 @@
                         <option value="Region: 32">Region: 32</option>
                         <option value="Region: 33">Region: 33</option>
                     </select>
-                </div>
-                <div class="col-md-12">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>School</th>
-                                <th>City</th>
-                                <th>Directors</th>
-                                <th>Conference</th>
-                                <th>Classification</th>
-                                <th>Year</th>
-                                <th>Stage Judge 1</th>
-                                <th>Stage Judge 2</th>
-                                <th>Stage Judge 3</th>
-                                <th>Stage Final</th>
-                                <th>SR Judge 1</th>
-                                <th>SR Judge 2</th>
-                                <th>SR Judge 3</th>
-                                <th>SR Final</th>
-                                <th>Award</th>
-                                <th>Selection 1</th>
-                                <th>Selection 2</th>
-                                <th>Selection 3</th>
-                                <th>Date</th>
-                                <th>Region</th>
-                                <th>cj1</th>
-                                <th>cj2</th>
-                                <th>cj3</th>
-                                <th>srj1</th>
-                                <th>srj2</th>
-                                <th>srj3</th>
-                                <th>Stage Average</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
+                    <label for="conference">Conference</label>
+                    <select class="form-control" id="conference">
+                        <option value="">All</option>
+                        <option value="A">A</option>
+                        <option value="AA">AA</option>
+                        <option value="AAA">AAA</option>
+                        <option value="AAAA">AAAA</option>
+                        <option value="AAAAA">AAAAA</option>
+                        <option value="AAAAAA">AAAAAA</option>
+                    </select>
                 </div>
             </div>
         </div>
     </div>
+    <table class="table table-striped table-hover table-sm table-dark table-responsive">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>School</th>
+                <th>City</th>
+                <th>Directors</th>
+                <th>Conference</th>
+                <th>Classification</th>
+                <th>Year</th>
+                <th>Stage Judge 1</th>
+                <th>Stage Judge 2</th>
+                <th>Stage Judge 3</th>
+                <th>Stage Final</th>
+                <th>SR Judge 1</th>
+                <th>SR Judge 2</th>
+                <th>SR Judge 3</th>
+                <th>SR Final</th>
+                <th>Award</th>
+                <th>Selection 1</th>
+                <th>Selection 2</th>
+                <th>Selection 3</th>
+                <th>Date</th>
+                <th>Region</th>
+                <th>cj1</th>
+                <th>cj2</th>
+                <th>cj3</th>
+                <th>srj1</th>
+                <th>srj2</th>
+                <th>srj3</th>
+                <th>Stage Average</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/plot.js"></script>
+    <!-- <script src="js/data.js"></script> -->
+    <!-- <script src="web/js/plot.js"></script> -->
 
 </body>
 
