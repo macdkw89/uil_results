@@ -26,6 +26,9 @@ CREATE TABLE IF NOT EXISTS uil_results (
     srj1 VARCHAR,
     srj2 VARCHAR,
     srj3 VARCHAR,
+    Selection_1_comparr VARCHAR,
+    Selection_2_comparr VARCHAR,
+    Selection_3_comparr VARCHAR,
     Stage_Avg FLOAT
 );
 

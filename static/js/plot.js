@@ -1,4 +1,4 @@
-// import data from data.js
+// import data from full_output.json
 let tableData = data;
 
 // get table references
